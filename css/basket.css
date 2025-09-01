@@ -1,0 +1,135 @@
+.booksuser {
+  margin-top: 150px;
+}
+
+.booksuser .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+.booksAdd {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 70%;
+}
+.totalbooks {
+  max-width: 25%;
+}
+
+.booksAdd .card {
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.booksAdd .card img {
+  width: 80%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  transition: transform 0.2s ease-in-out;
+}
+
+.booksAdd .card img:hover {
+  transform: translateY(-30px);
+  -webkit-transform: translateY(-30px);
+  -moz-transform: translateY(-30px);
+  -ms-transform: translateY(-30px);
+  -o-transform: translateY(-30px);
+}
+
+.booksAdd .card h3 {
+  font-size: 15px;
+  margin: 10px 0;
+  color: #5b5b5b;
+}
+
+.booksAdd .price {
+  color: var(--main-color);
+  font-weight: bold;
+  margin: 5px 0;
+}
+.booksAdd .Supplyandreduce {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 5px 10px;
+  margin: 5px auto;
+  width: 80%;
+  background-color: #eee;
+  border-radius: 5px;
+}
+.supply-btn,
+.reduce-btn {
+  cursor: pointer;
+  font-size: 25px;
+}
+.booksAdd .delete-btn {
+  background: #d62828;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin: 10px 0 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.booksAdd .add-btn:hover {
+  background: #7e060a;
+}
+.totalbooks {
+  padding: 50px 30px;
+  background-color: #eee;
+  max-width: 100%;
+  height: fit-content;
+  border-radius: 8px;
+}
+.totalbooks .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.totalbooks h3 {
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+.shop-btn,
+.buynow {
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 10px 0 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.buynow {
+  background-color: green;
+}
+.buynow:hover {
+  background-color: rgb(1, 68, 1);
+}
+.shop-btn {
+  background-color: blue;
+}
+.shop-btn:hover {
+  background-color: rgb(77, 77, 236);
+}

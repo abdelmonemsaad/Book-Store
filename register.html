@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&#038;display=swap" rel="stylesheet" />
+    <title>register</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/books-logo-vector.jpg" alt="logo">
+            </a>
+            <div class="links">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="books.html">Books</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="btns">
+                    <p class="userNames"></p>
+                    <a href class="reg">Register</a>
+                    <a href="login.html" class="login">Login</a>
+                    <a href="basket.html">
+                        <div class="basket">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            <p class="count">0</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="barIcon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <form class="form" id="createAccount">
+        <img src="images/books-logo-vector.jpg" alt>
+        <div class="form__message">
+            <p></p>
+        </div>
+        <div class="form__input-group">
+            <input type="text" id="signupUsername" class="form__input" autofocus placeholder="user name">
+            <div class="form__input-error-message " id="name-error"></div>
+        </div>
+        <div class="form__input-group">
+            <input type="text" class="form__input" id="email" autofocus placeholder="email">
+            <div class="form__input-error-message " id="email-error"></div>
+        </div>
+        <div class="form__input-group">
+            <input type="password" class="form__input" id="password" autofocus placeholder="password">
+            <div class="form__input-error-message " id="password-error"></div>
+        </div>
+        <div class="form__input-group">
+            <input type="password" class="form__input" id="password2" autofocus placeholder="Confirm password">
+            <div class="form__input-error-message " id="password-error2"></div>
+        </div>
+        <button class="form__button" type="submit">submit</button>
+        <p class="form__text">
+            <a class="form__link" href="login.html" id="linkLogin">Do you have an account?
+Sign in</a>
+        </p>
+    </form>
+
+    </section>
+    <!-- start -->
+    <section class="footer">
+        <div class="container">
+            <div>
+                <h4>Web Pages</h4>
+                <div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact">Contact</a></li>
+                        <li><a href="">Books</a></li>
+                        <li><a href="">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h4>Location Map</h4>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3435.084426892431!2d31.011344225470232!3d30.57516199323268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7d6bf3bfef67d%3A0x240a3bffb88e4661!2z2YPZhNmK2Kkg2KfZhNi52YTZiNmFINis2KfZhdi52Kkg2KfZhNmF2YbZiNmB2YrYqQ!5e0!3m2!1sar!2seg!4v1682732536122!5m2!1sar!2seg"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fa fa-location-dot text-light"></i> Egypt-cairo-Street number 20
+                    </li>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-volume
+                                text-light"></i> 048/2222753 - 2222758
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-volume
+                                text-light"></i> 2235689</li>
+                    <li>
+                        <i class="fa fa-envelope text-light"></i> itunit.support@gmail.com
+                    </li>
+                    <div class="numbers">
+                        <p>Visitors count</p>
+                        <p class="count"></p>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Book Store By Abdelmonem Saad</p>
+    </footer>
+    <!-- end -->
+    <!-- top -->
+    <span class="up">top</span>
+    <div id="alertBox" class="alert-box hidden">
+        <p></p>
+        <div class="exit">close</div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

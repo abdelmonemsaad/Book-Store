@@ -1,0 +1,55 @@
+.book {
+  margin-top: 150px;
+}
+.book .book-detials {
+  background: #fff;
+  width: 30%;
+  margin: 0px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.book .book-detials img {
+  width: 80%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  transition: transform 0.2s ease-in-out;
+}
+
+.book .book-detials img:hover {
+  transform: translateY(-30px);
+  -webkit-transform: translateY(-30px);
+  -moz-transform: translateY(-30px);
+  -ms-transform: translateY(-30px);
+  -o-transform: translateY(-30px);
+}
+
+.book .book-detials h3 {
+  padding: 10px;
+  color: #af3c27;
+  border-bottom: 1px black solid;
+  padding-bottom: 10px;
+}
+.book .book-detials p {
+  text-align: start;
+  padding: 10px;
+  border-bottom: 1px #af3c27 solid;
+  font-weight: bold;
+}
+.book .book-detials p:last-child {
+  border: none;
+}
