@@ -381,6 +381,57 @@ header .userNames {
 .books {
   margin-top: 80px;
 }
+.boxsearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 50px auto;
+  max-width: 400px;
+}
+
+#searchInput {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--main-color);
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+#searchInput:focus {
+  border-color: var(--main-color);
+  box-shadow: 0 0 5px #7e060a;
+}
+
+#searchBtn {
+  padding: 6px 10px;
+  background: var(--main-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#searchBtn:hover {
+  background: #420305;
+}
+
+#searchInput {
+  padding: 5px;
+  border: 1px var(--main-color) solid;
+  outline: none;
+  border-radius: 8px;
+}
+#notFound {
+  color: red;
+  display: none;
+  font-size: xx-large;
+  text-align: center;
+}
 
 .books .container {
   display: grid;

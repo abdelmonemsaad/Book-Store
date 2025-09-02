@@ -1,9 +1,9 @@
-// document.querySelectorAll("img").forEach(img => {
+document.querySelectorAll("img").forEach((img) => {
+  if (!img.hasAttribute("loading")) {
+    img.setAttribute("loading", "lazy");
+  }
+});
 
-//     if (!img.hasAttribute("loading")) {
-//         img.setAttribute("loading", "lazy");
-//     }
-// });
 const bar = document.querySelector(".barIcon");
 const links = document.querySelector(".links");
 if (bar) {
@@ -286,7 +286,7 @@ btnsAdd.forEach((button) => {
   });
 });
 
-// صفحة السلة (basket.html)
+// صفحة السلة
 let container = document.querySelector(".booksAdd");
 let totalAmount = document.querySelector(".amount");
 
@@ -367,7 +367,7 @@ if (shop) {
     window.location.href = "books.html";
   };
 }
-////////////
+
 // ------------------- بيانات الكتب -------------------
 let booksData = [
   {
@@ -483,7 +483,8 @@ bookscards.forEach((card, index) => {
 });
 let selectedBook = JSON.parse(localStorage.getItem("selectedBook"));
 if (selectedBook) {
-  bookcontainer.innerHTML = `
+  if (bookcontainer) {
+    bookcontainer.innerHTML = `
     <div class="book-detials">
     <img src="${selectedBook.img}" alt="${selectedBook.title}">
     <h3>${selectedBook.title}</h3>
@@ -494,4 +495,33 @@ if (selectedBook) {
     <p class="category">Category: ${selectedBook.category}</p>
     </div>
   `;
+  }
 }
+////////////
+//search button
+const searchInput = document.getElementById("searchInput");
+const searchBtn = document.getElementById("searchBtn");
+
+const notFound = document.getElementById("notFound");
+
+searchBtn.addEventListener("click", function () {
+  const filter = searchInput.value.toLowerCase().trim();
+  const cards = document.querySelectorAll(".card");
+  let found = false;
+
+  cards.forEach((card) => {
+    const title = card.querySelector("h3").textContent.toLowerCase().trim();
+    const price = card
+      .querySelector(".price")
+      .textContent.replace("EGP", "")
+      .trim();
+    if (title.includes(filter) || price.includes(filter)) {
+      card.style.display = "";
+      found = true;
+    } else {
+      card.style.display = "none";
+    }
+  });
+
+  notFound.style.display = found ? "none" : "block";
+});
